@@ -3,7 +3,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
 
 interface StudioNote {
   id: string;
@@ -105,7 +104,7 @@ export function StudioNotes() {
                   {/* Content */}
                   <div className="prose prose-lg max-w-none">
                     <p className="text-muted-foreground leading-relaxed italic">
-                      "{note.content}"
+                      &quot;{note.content}&quot;
                     </p>
                   </div>
 

@@ -58,8 +58,8 @@ export function Footer() {
             <Card className="bg-muted/50 border-secondary/20">
               <CardContent className="p-4">
                 <blockquote className="text-sm italic text-muted-foreground leading-relaxed">
-                  "Art has been central to my life from the beginning—a gift I've nurtured through 
-                  faith and formal training. Each piece connects the physical with the spiritual."
+                  &quot;Art has been central to my life from the beginning—a gift I&apos;ve nurtured through 
+                  faith and formal training. Each piece connects the physical with the spiritual.&quot;
                 </blockquote>
                 <p className="text-xs text-muted-foreground mt-2 font-medium">— Aviva</p>
               </CardContent>

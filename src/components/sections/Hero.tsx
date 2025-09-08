@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -41,7 +40,6 @@ const heroSlides = [
 ];
 
 export function Hero() {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted">
@@ -97,7 +95,7 @@ export function Hero() {
                     {slide.type === 'welcome' && (
                       <div className="pt-8 border-t border-muted">
                         <p className="text-sm text-muted-foreground italic">
-                          "At the core of my work is my faith in God. I see art as a way to connect the physical with the spiritual."
+                          &quot;At the core of my work is my faith in God. I see art as a way to connect the physical with the spiritual.&quot;
                         </p>
                         <p className="text-sm text-muted-foreground font-medium mt-2">— Aviva, Artist</p>
                       </div>

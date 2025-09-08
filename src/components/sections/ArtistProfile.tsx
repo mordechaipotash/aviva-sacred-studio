@@ -38,7 +38,7 @@ export function ArtistProfile() {
           
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient">
-              Aviva's Sacred Journey
+              Aviva&apos;s Sacred Journey
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Where natural talent meets divine inspiration, creating contemporary Jewish art that bridges ancient wisdom with modern expression.
@@ -70,7 +70,7 @@ export function ArtistProfile() {
             <Card className="bg-primary/5 border-primary/20">
               <CardContent className="p-8">
                 <div className="space-y-4">
-                  <div className="text-6xl text-secondary/20 font-serif">"</div>
+                  <div className="text-6xl text-secondary/20 font-serif">&quot;</div>
                   <blockquote className="text-lg italic leading-relaxed -mt-8">
                     At the core of my work is my faith in God. I see art as a way to connect the physical with the spiritual, 
                     and I strive to let my pieces reflect both inner emotions and a higher sense of purpose. Through color, 
@@ -90,7 +90,7 @@ export function ArtistProfile() {
               <h3 className="text-2xl font-bold">A Lifelong Calling</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Art has been central to my life from the beginning—a gift I've nurtured and developed over the years. 
+                  Art has been central to my life from the beginning—a gift I&apos;ve nurtured and developed over the years. 
                   Even before my formal training, I was winning competitions, driven by a natural talent that felt like 
                   a divine blessing.
                 </p>

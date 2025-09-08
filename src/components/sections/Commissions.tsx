@@ -77,7 +77,6 @@ const processSteps = [
 ];
 
 export function Commissions() {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -157,7 +156,6 @@ export function Commissions() {
                     <Button 
                       variant="outline" 
                       className="w-full mt-4 border-secondary text-secondary hover:bg-secondary/10"
-                      onClick={() => setSelectedType(type.id)}
                     >
                       Begin Consultation
                     </Button>
@@ -333,7 +331,7 @@ export function Commissions() {
               Ready to Create Something Sacred?
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Every commission begins with a conversation. Share your vision, and let's explore 
+              Every commission begins with a conversation. Share your vision, and let&apos;s explore 
               how we can bring your sacred moment to life through art.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -353,7 +351,6 @@ export function Commissions() {
                         key={type.id}
                         variant="outline"
                         className="w-full justify-start border-secondary/30 hover:bg-secondary/10"
-                        onClick={() => setSelectedType(type.id)}
                       >
                         <span className="mr-3">{type.icon}</span>
                         {type.title}

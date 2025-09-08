@@ -122,7 +122,7 @@ export function Gallery() {
         <div className="mt-20 text-center bg-muted/50 rounded-2xl p-12">
           <div className="space-y-6 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gradient">
-              Don't See What Speaks to Your Heart?
+              Don&apos;t See What Speaks to Your Heart?
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Every piece is one-of-one, but new works are born from prayer and inspiration. 

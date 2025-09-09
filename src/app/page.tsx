@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { artworks } from '@/data/artworks-aviva';
 
 export default function Home() {
+  const [showWelcome, setShowWelcome] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showText, setShowText] = useState(false);
   const [showInquireButton, setShowInquireButton] = useState(false);
@@ -12,6 +13,15 @@ export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
   
   const currentArtwork = artworks[currentIndex];
+
+  useEffect(() => {
+    // Hide welcome screen after 5 seconds
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 5000);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     // Reset states when artwork changes
@@ -46,6 +56,27 @@ export default function Home() {
     // Handle inquiry - could open email or form
     window.location.href = `mailto:contact@avivasacredstudio.com?subject=Inquiry: ${currentArtwork.title}`;
   };
+
+  if (showWelcome) {
+    return (
+      <main className="min-h-screen bg-white flex items-center justify-center p-8">
+        <div className="max-w-2xl text-center space-y-6 animate-fade-up">
+          <h1 className="text-4xl font-light tracking-wide text-gray-800">
+            Hi, I&apos;m Aviva
+          </h1>
+          <p className="text-lg font-light text-gray-600 leading-relaxed">
+            Welcome to my gallery
+          </p>
+          <p className="text-base font-light text-gray-500 leading-relaxed max-w-lg mx-auto">
+            After many years of creative expression, I&apos;ve been crafting sacred art that speaks to the soul. Each piece is a journey of faith, color, and divine inspiration.
+          </p>
+          <div className="pt-8">
+            <div className="w-16 h-px bg-gray-300 mx-auto animate-pulse"></div>
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-white flex items-center justify-center p-8">
